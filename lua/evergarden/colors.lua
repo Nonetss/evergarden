@@ -22,6 +22,7 @@ _G.evergarden_colors = {
   blue = '#5e81ac', -- Azul más profundo
   purple = '#b48ead', -- Púrpura ligeramente más claro
   pink = '#d08770', -- Rosa ajustado
+  subrayado = '#49525a',
 }
 
 local M = {}

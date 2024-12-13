@@ -35,6 +35,7 @@
 ---@field diff { ['add'|'delete'|'change']: string }
 ---@field sign string
 ---@field comment string
+---@field subrayado string
 
 ---@class EvergardenSyntax
 ---@field keyword string
@@ -85,6 +86,7 @@ function M.setup(colors, config)
   theme.blue = colors.blue
   theme.purple = colors.purple
   theme.pink = colors.pink
+  theme.subrayado = colors.subrayado
 
   theme.syntax = {
     keyword = theme.red,

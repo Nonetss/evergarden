@@ -9,10 +9,10 @@ return function(theme, config)
     CursorColumn = { theme.none, theme.surface0 },
     QuickFixLine = { theme.none, theme.surface0 },
 
-    Visual = { theme.text, theme.orange, style = { 'bold' } }, -- Texto claro con fondo naranja
+    Visual = { theme.text, theme.subrayado, style = { 'bold' } }, -- Texto claro con fondo naranja
 
-    LineNr = { theme.surface1 },
-    CursorLineNr = { theme.comment },
+    LineNr = { theme.text, theme.none }, -- Números de línea en color claro
+    CursorLineNr = { theme.yellow, theme.none, style = { 'bold' } }, -- Línea actual destacada
     SignColumn = { theme.none, theme.sign },
     WinSeparator = {
       config.transparent_background and theme.surface0 or theme.mantle,
