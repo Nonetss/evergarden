@@ -22,8 +22,6 @@ _G.evergarden_colors = {
   blue = '#5e81ac', -- Azul más profundo
   purple = '#b48ead', -- Púrpura ligeramente más claro
   pink = '#d08770', -- Rosa ajustado
-  visual = '#3c4c55', -- Fondo de selección destacado
-  visual_text = '#ffffff', -- Texto en selección altamente visible
 }
 
 local M = {}
@@ -37,17 +35,7 @@ end
 function M.setup(config)
   ---@type evergarden.types.config
   config = vim.tbl_extend('force', _G.evergarden_config, config or {})
-  local colors = M.colors()
-
-  -- Personalización del grupo Visual
-  vim.cmd(
-    'highlight Visual guibg='
-      .. colors.visual
-      .. ' guifg='
-      .. colors.visual_text
-  )
-
-  return require('evergarden.theme').setup(colors, config)
+  return require('evergarden.theme').setup(M.colors(), config)
 end
 
 return M

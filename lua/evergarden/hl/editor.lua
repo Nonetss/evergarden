@@ -9,7 +9,7 @@ return function(theme, config)
     CursorColumn = { theme.none, theme.surface0 },
     QuickFixLine = { theme.none, theme.surface0 },
 
-    Visual = { theme.none, theme.surface1 },
+    Visual = { theme.text, theme.orange, style = { 'bold' } }, -- Texto claro con fondo naranja
 
     LineNr = { theme.surface1 },
     CursorLineNr = { theme.comment },
