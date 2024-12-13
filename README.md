@@ -1,5 +1,3 @@
-![preview__lua](./images/asset.lua.png)
-
 <h1 align="center">
     evergarden
 </h1>
@@ -10,11 +8,7 @@ evergarden is inspired by the [everforest colorscheme](https://github.com/sainnh
 
 evergarden was designed as a cozy theme with a focus on readability and visual comfort.
 
-|        |                                                     |
-| :----: | :-------------------------------------------------: |
-|  hard  | ![preview-hard__rust](./images/asset.hard.rust.png) |
-| medium |      ![preview-rust](./images/asset.rust.png)       |
-|  soft  | ![preview-soft__rust](./images/asset.soft.rust.png) |
+> **Note:** This project is a **fork** of the [evergarden](https://github.com/comfysage/evergarden) colorscheme by [comfysage](https://github.com/comfysage), with additional modifications for personal use and customization.
 
 ## Installation
 
@@ -22,7 +16,7 @@ using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 return {
-  'comfysage/evergarden',
+  'nonetss/evergarden',
   priority = 1000, -- Colorscheme plugin is loaded first before any other plugins
   opts = {
     transparent_background = true,
@@ -35,7 +29,7 @@ return {
 using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```Vim
-Plug 'comfysage/evergarden'
+Plug 'nonetss/evergarden'
 ```
 
 ## Configuration
