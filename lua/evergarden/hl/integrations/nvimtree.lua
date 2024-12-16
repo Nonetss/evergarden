@@ -30,6 +30,15 @@ M.get = function(theme, config)
     NvimTreeSpecialFile = { fg = theme.pink },
     NvimTreeImageFile = { fg = theme.subtext1 },
     NvimTreeOpenedFile = { fg = theme.pink },
+
+    -- Ventanas flotantes (borde y fondo)
+    NormalFloat = {
+      bg = config.transparent_background and theme.none or theme.base, -- Fondo de las ventanas flotantes
+      fg = theme.subtext1, -- Texto dentro de las ventanas flotantes
+    },
+    FloatBorder = {
+      fg = theme.text, -- Color del borde de las ventanas flotantes
+    },
   }
 end
 
