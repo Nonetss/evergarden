@@ -11,7 +11,7 @@ M.get = function(theme, _)
     ['TelescopeSelectionCaret'] = { link = 'TelescopeNormal' },
     ['TelescopeMatching'] = { link = 'Search' },
     ['TelescopeTitle'] = { link = 'FloatTitle' },
-    ['TelescopeBorder'] = { link = 'FloatBorder' },
+    ['TelescopeBorder'] = { theme.text },
     ['TelescopePromptBorder'] = { link = 'TelescopeBorder' },
     ['TelescopeResultsBorder'] = { link = 'TelescopeBorder' },
     ['TelescopePreviewBorder'] = { link = 'TelescopeBorder' },
