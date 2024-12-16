@@ -12,7 +12,7 @@ M.get = function(theme, config)
     NvimTreeFolderIcon = { fg = colors.folder },
     NvimTreeNormal = {
       fg = theme.subtext1,
-      bg = theme.text,
+      bg = config.transparent_background and theme.none or theme.mantle,
     },
     NvimTreeOpenedFolderName = { fg = colors.folder },
     NvimTreeEmptyFolderName = { fg = theme.overlay0 },
